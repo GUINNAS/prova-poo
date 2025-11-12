@@ -57,5 +57,4 @@ public class AlunoController {
         Optional<AlunoModel> alunoEncontrado = alunoService.obterAlunoPorId(id);
         return alunoEncontrado.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
-
 }
